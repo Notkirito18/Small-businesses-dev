@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1" />
+    <title>Small Businesses Dev</title>
+    <link rel="icon" href="./favicon1.png" type="image/png" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="./css/popupForm.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--Header_section-->
+    <header id="header_wrapper">
+      <div class="container">
+        <div class="header_box">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+          </div>
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+              <button
+                type="button"
+                id="nav-toggle"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="main-nav" class="collapse navbar-collapse navStyle">
+              <ul class="nav navbar-nav" id="mainNav">
+                <li class="active">
+                  <a href="#hero_section">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About Us</a>
+                </li>
+                <li><a href="#projects">Our Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--Hero_Section-->
+    <section id="hero_section" class="top_cont_outer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="top_left_cont zoomIn wow animated">
+              <div class="hero-title">
+                <h2>We <span id="changing-text-1"></span></h2>
+              </div>
+              <div class="hero-title">
+                <h2>Your <span id="changing-text-2"></span></h2>
+              </div>
+              <div class="hero-button">
+                <a id="btnOpenForm">LET'S DO BUSINESS</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="hero-image-wrapper">
+              <img
+                src="./img/hero-right-2.png"
+                alt="web developper illustration" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--* popupform -->
+      <div class="form-popup-bg">
+        <div class="form-container">
+          <button id="btnCloseForm" class="close-button">X</button>
+          <h1>LET US MAKE YOUR <span> WEBSITE</span></h1>
+          <p class="form-info">
+            Please complete this form, and we will contact you to can start
+            working together
+          </p>
+          <form
+            method="POST"
+            action="https://formsubmit.co/djallel123456@gmail.com"
+            id="popup-form">
+            <h2 class="form-subtitle">About <span>You</span></h2>
+            <div class="form-group">
+              <label for="popup-form-name-input"
+                >Name <span> (required)</span></label
+              >
+              <input
+                id="popup-form-name-input"
+                name="name"
+                type="text"
+                class="form-control" />
+              <div class="popup-form-error-message" id="popup-name-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="popup-form-email-input"
+                >Email <span> (required)</span></label
+              >
+              <input
+                id="popup-form-email-input"
+                name="email"
+                type="email"
+                class="form-control" />
+              <div
+                class="popup-form-error-message"
+                id="popup-email-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="popup-form-phone-input"
+                >Phone Number <span> (optional)</span></label
+              >
+              <input
+                id="popup-form-phone-input"
+                name="phone"
+                type="text"
+                class="form-control" />
+              <div
+                class="popup-form-error-message"
+                id="popup-phone-error"></div>
+            </div>
+            <h2 class="form-subtitle">About your <span> business</span></h2>
+            <div class="form-group">
+              <label for="company-name-input"
+                >Company Name <span> (required)</span></label
+              >
+              <input
+                id="company-name-input"
+                name="company-name"
+                class="form-control"
+                type="text" />
+              <div
+                class="popup-form-error-message"
+                id="company-name-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="business-type-input"
+                >Business Type <span> (required)</span></label
+              >
+              <input
+                id="business-type-input"
+                name="business-type"
+                class="form-control"
+                type="text"
+                placeholder="EX: Barbershop" />
+              <div
+                class="popup-form-error-message"
+                id="business-type-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="business-location"
+                >Business Location <span> (optional)</span></label
+              >
+              <input
+                id="business-location"
+                name="business-location"
+                class="form-control"
+                type="text" />
+            </div>
+            <div class="form-group">
+              <label for="business-details"
+                >Business details <span> (optional)</span></label
+              >
+              <div>
+                <textarea
+                  id="business-detail"
+                  name="business details"></textarea>
+              </div>
+            </div>
+
+            <h2 class="form-subtitle">About our <span> Deal</span></h2>
+            <p class="form-info">
+              Please provide information about the services you require from us
+            </p>
+            <div class="form-group">
+              <label
+                >What features would you like to include in your website ?
+                <span> (optional)</span></label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  name="website-featurebuild-website"
+                  type="checkbox"
+                  value=""
+                  id="build-website"
+                  checked
+                  disabled />
+                <label class="form-check-label" for="build-website">
+                  Build a website
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  name="website-feature-multilingual"
+                  type="checkbox"
+                  value="checked"
+                  id="multilingual" />
+                <label class="form-check-label" for="multilingual">
+                  Make the website Multilingual
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  name="website-feature-multipage"
+                  type="checkbox"
+                  value="checked"
+                  id="multipage" />
+                <label class="form-check-label" for="multipage">
+                  Multiple pages
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  name="website-feature-booking"
+                  type="checkbox"
+                  value="checked"
+                  id="booking" />
+                <label class="form-check-label" for="booking">
+                  Add online booking
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="other-features">Other features </label>
+                <div>
+                  <textarea
+                    name="other-features"
+                    id="other-features"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label
+                  >Do you have content for your website ready ?
+                  <span> (optional)</span></label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="content for your website"
+                    id="yes"
+                    value="yes" />
+                  <label class="form-check-label" for="yes"> Yes </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="content for your website"
+                    id="no"
+                    value="no" />
+                  <label class="form-check-label" for="no"> No </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="content for your website"
+                    id="some"
+                    value="some" />
+                  <label class="form-check-label" for="some">
+                    I have some content ready
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="submit-btn-container">
+              <div>
+                <input
+                  id="popup-submit-btn"
+                  type="input"
+                  value="send request" />
+              </div>
+              <div
+                class="popup-form-error-message"
+                id="popup-submit-error"></div>
+            </div>
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message From smallbusinessesdev let's do business form" />
+            <!--TODO REPLACE THANKS.HTML LOCAL URL WITH ABSOLUTE REAL URL WHEN HOSTING  -->
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5501/thanks.html" />
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 about-image-container wow fadeInLeft">
+            <img src="./img/store-2.png" alt="local store image" />
+          </div>
+          <div class="col-md-6 m-t-md-3">
+            <div id="about-description-container">
+              <div>
+                <div class="pretitle-container">
+                  <hr />
+                  <div>WHO ARE WE ?</div>
+                </div>
+                <h2 class="section-title">
+                  We are the <span> partner</span> you need to
+                  <span>stand out</span>
+                </h2>
+              </div>
+              <p>
+                We’re a small team of developpers dedicated to help small
+                businesses build a powerful online presence. Whether you run a
+                garage, a car wash, a plumbing service, a restaurant, or a
+                barbershop, we create websites that are fast, mobile-friendly,
+                and tailored to your industry with your branding. Our goal is
+                simple: make it easy for your customers to find you, trust you,
+                and reach you — all through a website that looks great and gets
+                results.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 about-image-small-container wow fadeInLeft">
+            <img src="./img/store-2.png" alt="local store image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Services-->
+    <section id="services">
+      <div class="container">
+        <div>
+          <div class="pretitle-container">
+            <hr />
+            <div>WHAT DO WE DO ?</div>
+          </div>
+          <h2 class="section-title services-title">
+            We build <span>websites</span> that grow your <span>business</span>.
+            <div>here are our services</div>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="carousel-container wow fadeInUp">
+            <div class="carousel" id="carousel">
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle colored-half-circle"></div>
+                  <div class="service-title">Custom Website Design</div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/web-design.png"
+                      alt="web design icon" />
+                  </div>
+                  <div class="service-details">
+                    We craft unique designs to reflect your brand and engage
+                    your ideal customers
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle"></div>
+                  <div class="service-title">Mobile-Friendly Layouts</div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/mobile friendly.png"
+                      alt="mobile friendly icon" />
+                  </div>
+                  <div class="service-details">
+                    Your site will look great and function smoothly on phones,
+                    tablets, desktops, and beyond
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle colored-half-circle"></div>
+                  <div class="service-title">Fast and Secure Hosting</div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/hosting.png"
+                      alt="hosting icon" />
+                  </div>
+                  <div class="service-details">
+                    We provide reliable hosting to keep your website running
+                    fast, safe, and always online
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle"></div>
+                  <div class="service-title">
+                    Search Engine Optimization (SEO)
+                  </div>
+                  <div class="pic">
+                    <img src="./img/skills icons/SEO.png" alt="SEO icon" />
+                  </div>
+                  <div class="service-details">
+                    We optimize your site so it ranks better on Google and
+                    attracts more visitors today
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle colored-half-circle"></div>
+                  <div class="service-title">Contact and Booking Forms</div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/contact-form.png"
+                      alt="contact form icon" />
+                  </div>
+                  <div class="service-details">
+                    We connect your site with Google Maps, social media to boost
+                    your visibility
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle"></div>
+                  <div class="service-title">Google Maps & Social Links</div>
+                  <div class="pic">
+                    <img src="./img/skills icons/map.png" alt="map icon" />
+                  </div>
+                  <div class="service-details">
+                    We’re here even after launch, offering updates, fixes, and
+                    support when you need it
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle colored-half-circle"></div>
+                  <div class="service-title">
+                    Multilingual Integration Support
+                  </div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/translate.png"
+                      alt="translate icon" />
+                  </div>
+                  <div class="service-details">
+                    We provide multiple languages Integration on demand for the
+                    website
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="half-circle"></div>
+                  <div class="service-title">Ongoing Aftersale Support</div>
+                  <div class="pic">
+                    <img
+                      src="./img/skills icons/customer-support.png"
+                      alt="customer support icon" />
+                  </div>
+                  <div class="service-details">
+                    We’re here even after launch, offering updates, fixes, and
+                    support when you need it
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container carousel-btns">
+            <button class="prev-btn">&lt;</button>
+            <button class="autoplay-btn">||</button>
+            <button class="next-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--projects -->
+    <section id="projects" class="page_section projects-container">
+      <div class="container">
+        <div>
+          <div class="pretitle-container">
+            <hr />
+            <div>WHAT HAVE WE DONE ?</div>
+          </div>
+          <h2 class="section-title projects-title">Our projects</h2>
+        </div>
+        <div class="tabs-container">
+          <div class="tab-buttons">
+            <button
+              id="travel"
+              content-id="content-travel"
+              class="tab-btn active">
+              TRAVEL
+            </button>
+            <button id="sports" content-id="content-sports" class="tab-btn">
+              SPORTS
+            </button>
+            <button
+              id="education"
+              content-id="content-education"
+              class="tab-btn">
+              EDUCATION
+            </button>
+            <button id="events" content-id="content-events" class="tab-btn">
+              EVENTS
+            </button>
+          </div>
+          <div class="tab-contents">
+            <div class="content show" id="content-travel">
+              <div class="content-info row">
+                <div class="col-md-6 tab-content-details-container">
+                  <h1 class="content-title">
+                    ENHANCE YOUR TRAVEL EXPERIENCE WITH
+                    <span id="miles-travel">MILES TRAVEL</span>
+                  </h1>
+                  <div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Facere, at qui quis suscipit rem tempora excepturi
+                      voluptate natus hic dicta magni, a nulla maiores modi ad
+                      perferendis illum repellat cumque! Labore, obcaecati
+                      aliquid. Quos, magnam reiciendis. Enim illum sapiente nisi
+                      quam, expedita cum numquam et dicta at quasi excepturi,
+                      commodi magni dignissimos ducimus sint vitae fuga quod
+                      laboriosam. Nulla, facilis?
+                    </p>
+                  </div>
+                  <div>
+                    <a id="learn-more" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 content-image-container wow fadeInRight">
+                  <img src="./img/tab-pic-travel.png" alt="tab-pic-travel" />
+                </div>
+              </div>
+            </div>
+            <div class="content" id="content-sports">
+              <div class="content-info row">
+                <div class="col-md-6 tab-content-details-container">
+                  <h1 class="content-title">
+                    ENHANCE YOUR SPORTS EXPERIENCE WITH
+                    <span id="miles-sports">MILES SPORTS</span>
+                  </h1>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi cupiditate reiciendis quasi nam ullam accusamus
+                      fuga, ut eaque quaerat maiores debitis dolorem sed impedit
+                      atque? Repellendus, inventore. Optio suscipit veritatis
+                      consectetur, ullam explicabo alias accusantium totam odit
+                      voluptas dolor sit? Modi placeat dicta blanditiis ipsam
+                      natus necessitatibus aspernatur deleniti, nostrum veniam,
+                      odio sapiente quaerat nobis alias! Placeat excepturi
+                      officiis voluptatem!
+                    </p>
+                  </div>
+                  <div>
+                    <a id="learn-more" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 content-image-container wow fadeInRight">
+                  <img src="./img/tab-pic-sports.png" alt="tab-pic-sports" />
+                </div>
+              </div>
+            </div>
+            <div class="content" id="content-education">
+              <div class="content-info row">
+                <div class="col-md-6 tab-content-details-container">
+                  <h1 class="content-title">
+                    ENHANCE YOUR EDUCATION EXPERIENCE WITH
+                    <span id="miles-education">MILES EDUCATION</span>
+                  </h1>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi cupiditate reiciendis quasi nam ullam accusamus
+                      fuga, ut eaque quaerat maiores debitis dolorem sed impedit
+                      atque? Repellendus, inventore. Optio suscipit veritatis
+                      consectetur, ullam explicabo alias accusantium totam odit
+                      voluptas dolor sit? Modi placeat dicta blanditiis ipsam
+                      natus necessitatibus aspernatur deleniti, nostrum veniam,
+                      odio sapiente quaerat nobis alias! Placeat excepturi
+                      officiis voluptatem!
+                    </p>
+                  </div>
+                  <div>
+                    <a id="learn-more" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 content-image-container wow fadeInRight">
+                  <img
+                    src="./img/tab-pic-education.png"
+                    alt="tab-pic-education" />
+                </div>
+              </div>
+            </div>
+            <div class="content" id="content-events">
+              <div class="content-info row">
+                <div class="col-md-6 tab-content-details-container">
+                  <h1 class="content-title">
+                    ENHANCE YOUR EVENTS EXPERIENCE WITH
+                    <span id="miles-events">MILES EVENTS</span>
+                  </h1>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi cupiditate reiciendis quasi nam ullam accusamus
+                      fuga, ut eaque quaerat maiores debitis dolorem sed impedit
+                      atque? Repellendus, inventore. Optio suscipit veritatis
+                      consectetur, ullam explicabo alias accusantium totam odit
+                      voluptas dolor sit? Modi placeat dicta blanditiis ipsam
+                      natus necessitatibus aspernatur deleniti, nostrum veniam,
+                      odio sapiente quaerat nobis alias! Placeat excepturi
+                      officiis voluptatem!
+                    </p>
+                  </div>
+                  <div>
+                    <a id="learn-more" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-6 content-image-container wow fadeInRight">
+                  <img src="./img/tab-pic-events.png" alt="tab-pic-events" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="page_section contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft contact-img-wrapper">
+            <img
+              class="contact-img"
+              src="./img/contact.png"
+              alt="contact illustration" />
+          </div>
+          <div class="col-md-6 wow fadeInLeft contact-form-wrapper">
+            <h2>Contact Us</h2>
+            <form
+              id="contact-form"
+              action="https://formsubmit.co/djallel123456@gmail.com"
+              method="POST">
+              <div class="form">
+                <input
+                  class="input-text"
+                  id="contact-form-name-input"
+                  type="text"
+                  name="name"
+                  maxlength="30"
+                  placeholder="Your Name *" />
+                <div
+                  class="contact-form-error-message"
+                  id="contact-name-error"></div>
+                <input
+                  class="input-text"
+                  type="email"
+                  id="contact-form-email-input"
+                  name="email"
+                  placeholder="Your E-mail *" />
+                <div
+                  class="contact-form-error-message"
+                  id="contact-email-error"></div>
+                <textarea
+                  class="input-text text-area"
+                  name="message"
+                  id="contact-form-message-input"
+                  cols="0"
+                  rows="0"
+                  placeholder="Your message"></textarea>
+                <div
+                  class="contact-form-error-message"
+                  id="contact-message-error"></div>
+                <div class="submit-btn-container">
+                  <input
+                    id="contact-submit-btn"
+                    class="contact-submit-btn"
+                    type="input"
+                    value="send message" />
+                </div>
+              </div>
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message From my smallbusinessesdev website Contact form !" />
+              <!--TODO REPLACE THANKS.HTML LOCAL URL WITH ABSOLUTE REAL URL WHEN HOSTING  -->
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5501/thanks.html" />
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="footer_wrapper">
+      <div class="container">
+        <div class="contact_info">
+          <div class="row">
+            <div class="col-md-6 wow">
+              <img class="footer-logo" src="./img/logo.png" alt="logo" />
+              <div>
+                <p>
+                  our email :
+                  <a href="mailto:info@smallbusinessesdev.com" target="_blank"
+                    >info@smallbusinessesdev.com</a
+                  >
+                </p>
+              </div>
+              <div>
+                <p>
+                  call us :
+                  <a href="tel:+34674623815" target="_blank">+34 674 623 815</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 wow">
+              <div class="footer-right-wrapper">
+                <p><a href="./legal.html#privacy-policy">Privacy Policy</a></p>
+                <p>
+                  <a href="./legal.html#terms-of-service">Terms of Service</a>
+                </p>
+                <p>Find us online :</p>
+                <ul class="social_links">
+                  <li class="facebook animated bounceIn">
+                    <a href="" target="_blank"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="whatsapp animated bounceIn">
+                    <a href=" https://wa.me/+34674623815" target="_blank"
+                      ><i class="fa fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li class="instagram animated bounceIn">
+                    <a
+                      href="https://www.instagram.com/market.miles/"
+                      target="_blank"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="linkedin animated bounceIn">
+                    <a href="#" target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy;2025 Smallbusinessesdev. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e92d27189a.js"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/text-typing.js"></script>
+  </body>
+</html>

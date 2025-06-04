@@ -1,0 +1,37 @@
+.hero-section-legal {
+  position: relative;
+  background: url(../img/bg-lines-2.png);
+  background-size: auto;
+  background-size: contain;
+}
+.legal-title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.legal-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  color: #1a1a1a;
+}
+
+.legal-paragraph {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+.separator {
+  border: 1px solid #000000ab;
+  margin: 90px 2px 90px;
+}
+@media (max-width: 991px) {
+  .separator {
+    border: 1px solid #000000ab;
+    margin: 40px 2px 40px;
+  }
+}

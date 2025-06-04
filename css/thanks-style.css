@@ -1,0 +1,22 @@
+.hero-section-thanks {
+  position: relative;
+  background: url(../img/bg-lines-2.png);
+  height: 650px;
+  background-size: cover;
+}
+
+.thanks-wrapper {
+  margin-bottom: 60px;
+}
+
+.thanks-wrapper > div > h2 {
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+.thanks-wrapper > div > h2 > span {
+  color: #16c47f;
+}
+.thanks-wrapper > div > p {
+  color: #1a1a1a;
+  font-size: 20px;
+}

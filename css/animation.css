@@ -1,0 +1,147 @@
+/*
+   Animation example, for spinners
+*/
+.animate-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/* Animation Timers
+---------------------------------*/
+.delay-02s {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+.delay-03s {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+.delay-04s {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.delay-05s {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.delay-06s {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+.delay-07s {
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+}
+
+.delay-08s {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+.delay-09s {
+  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+.delay-12s {
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+#cycle-loader {
+  height: 32px;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  z-index: 999;
+}
