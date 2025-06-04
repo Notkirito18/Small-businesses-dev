@@ -1,4 +1,4 @@
-//  "#38A95E"
+//  "#27debf"
 //  "#333A73"
 //  "#C499F3"
 //  "#FF004D"
@@ -47,7 +47,7 @@ function removeGradient(element) {
   if (element.classList.length > 1) {
     switch (element.id) {
       case "travel":
-        element.style.background = "#38A95E";
+        element.style.background = "#27debf";
         break;
       case "sports":
         element.style.background = "#333A73";
@@ -71,7 +71,7 @@ document.getElementById("travel").addEventListener("touchstart", () => {
 });
 
 travelClick = () => {
-  document.getElementById("travel").style.background = "#38A95E";
+  document.getElementById("travel").style.background = "#27debf";
   document.getElementById("sports").style.background = "#032144";
   document.getElementById("education").style.background = "#032144";
   document.getElementById("events").style.background = "#032144";

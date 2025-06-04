@@ -5,14 +5,10 @@ $(window).load(function () {
 
 $(document).ready(function () {
   $("#header_wrapper").scrollToFixed();
-  $(".res-nav_click").click(function () {
-    $(".main-nav").slideToggle();
-    return false;
-  });
-
   if ($("#main-nav ul li:first-child").hasClass("active")) {
     $("#main-nav").css("background", "none");
   }
+
   $("#mainNav").onePageNav({
     currentClass: "active",
     changeHash: false,
@@ -21,25 +17,19 @@ $(document).ready(function () {
     filter: "",
     easing: "swing",
     begin: function () {},
-    end: function () {
-      if (!$("#main-nav ul li:first-child").hasClass("active")) {
-        $(".header").addClass("addBg");
-      } else {
-        $(".header").removeClass("addBg");
-      }
-    },
-    scrollChange: function ($currentListItem) {
-      if (!$("#main-nav ul li:first-child").hasClass("active")) {
-        $(".header").addClass("addBg");
-      } else {
-        $(".header").removeClass("addBg");
-      }
-    },
+    end: function () {},
+  });
+
+  // Collapse the navbar when any link is clicked
+  $("#mainNav li a").on("click", function () {
+    if ($(".navbar-toggle").is(":visible")) {
+      $(".navbar-toggle").click();
+    }
+  });
+
+  $("#mainNav li a:not(.dropdown-toggle)").on("click", function () {
+    if ($(".navbar-toggle").is(":visible")) {
+      $(".navbar-toggle").click();
+    }
   });
 });
-
-wow = new WOW({
-  animateClass: "animated",
-  offset: 100,
-});
-wow.init();

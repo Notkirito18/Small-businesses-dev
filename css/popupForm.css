@@ -1,10 +1,3 @@
-@color-card-background: #2d3638;
-@color-tag-background: #191e20;
-@color-anchor: #e37544;
-@color-body-copy: #b9bcbd;
-@default-border-radius: 10px;
-@breakpoint-medium: "screen and (min-width: 700px)";
-
 html,
 body {
   background-color: #fff;
@@ -100,7 +93,7 @@ body {
 }
 .form-subtitle > span,
 .form-container > h1 > span {
-  color: #16c47f;
+  color: #27debf;
 }
 .form-group > label,
 .form-group > div > label {
@@ -115,7 +108,7 @@ body {
   color: #1a1a1a;
 }
 .form-check-input {
-  background-color: #16c47f;
+  background-color: #27debf;
 }
 
 #popup-submit-btn {
@@ -125,7 +118,7 @@ body {
   padding-left: 23px;
   margin-bottom: 10px;
   cursor: pointer;
-  background: #16c47ee0;
+  background: #27debfe0;
   border: 0px;
   color: #fff;
   font-size: 16px;

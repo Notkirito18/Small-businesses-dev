@@ -27,8 +27,12 @@
 }
 .separator {
   border: 1px solid #000000ab;
-  margin: 90px 2px 90px;
+  margin: 90px 0px 90px;
 }
+section {
+  padding: 0px;
+}
+
 @media (max-width: 991px) {
   .separator {
     border: 1px solid #000000ab;

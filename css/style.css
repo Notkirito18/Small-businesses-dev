@@ -21,7 +21,6 @@ ul {
 .figure {
   margin: 0px;
 }
-
 a,
 a:hover,
 a:active {
@@ -121,9 +120,9 @@ p {
   max-width: 170px;
 }
 
-.res-nav_click {
+/* .res-nav_click {
   display: none;
-}
+} */
 
 /* Nav Styles
 ---------------------------------*/
@@ -190,12 +189,12 @@ p {
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > div > li > a:hover,
 .navbar-inverse .navbar-nav > div > li > a:focus {
-  color: #16c47f;
+  color: #27debf;
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover {
-  color: #16c47f;
+  color: #27debf;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -206,7 +205,7 @@ p {
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
   text-decoration: none;
-  color: #16c47f;
+  color: #27debf;
   background-color: transparent;
 }
 
@@ -256,12 +255,12 @@ p {
   font-weight: 700;
   padding: 12px 25px;
   letter-spacing: 0.25px;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   cursor: pointer;
 }
 
 .hero-button a:hover {
-  background-color: #16c47ee0;
+  background-color: #27debfe0;
   outline: 2px solid #ffffff !important;
 }
 
@@ -299,7 +298,7 @@ p {
 
 .top_left_cont h2 {
   font-size: 40px;
-  color: #16c47f;
+  color: #27debf;
   line-height: 52px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -399,7 +398,7 @@ section {
   letter-spacing: 3px;
 }
 .section-title > span {
-  color: #16c47f;
+  color: #27debf;
 }
 
 .services-title {
@@ -434,7 +433,7 @@ section {
   border-radius: 0 0 50% 50%; /* to create the half-circle shape */
 }
 .colored-half-circle {
-  background-color: #16c47f !important;
+  background-color: #27debf !important;
 }
 
 .pic {
@@ -545,7 +544,7 @@ section {
   transition: background-color 0.3s ease;
 }
 #travel {
-  background: #38a95e;
+  background: #27debf;
 }
 .content {
   display: none;
@@ -577,7 +576,7 @@ section {
   padding: 16px;
 }
 #content-travel {
-  border: 1px solid #38a95e;
+  border: 1px solid #27debf;
 }
 
 #content-sports {
@@ -592,7 +591,7 @@ section {
   border: 1px solid #ff004d;
 }
 #miles-travel {
-  color: #38a95e;
+  color: #27debf;
 }
 #miles-sports {
   color: #333a73;
@@ -676,9 +675,7 @@ section {
 }
 .submit-btn-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  justify-content: left;
 }
 .contact-submit-btn {
   width: 175px;
@@ -708,6 +705,16 @@ section {
   display: none;
 }
 
+.contact-img-wrapper-small {
+  display: none;
+}
+
+/** footer */
+/** footer */
+/** footer */
+/** footer */
+/** footer */
+/** footer */
 /** footer */
 
 footer {
@@ -735,7 +742,7 @@ footer {
 
 .contact_info p > a:hover {
   cursor: pointer;
-  color: #16c47f;
+  color: #27debf;
 }
 .footer-right-wrapper > p > a {
   color: #fffdf6;
@@ -787,7 +794,7 @@ footer {
 }
 
 .whatsapp a:hover {
-  color: #16c47f;
+  color: #27debf;
 }
 .facebook a:hover {
   color: #0866ff;
@@ -832,6 +839,18 @@ footer {
   .social_links {
     width: 100%;
   }
+
+  .contact-img-wrapper {
+    display: none;
+  }
+
+  .contact-img-wrapper-small {
+    display: block;
+  }
+  .submit-btn-container {
+    justify-content: center;
+  }
+
   footer {
     padding: 50px 0 50px;
   }
@@ -852,7 +871,7 @@ footer {
   }
   .top_left_cont h2 {
     font-size: 25px;
-    color: #16c47f;
+    color: #27debf;
     line-height: 39px;
     margin: 0;
   }
