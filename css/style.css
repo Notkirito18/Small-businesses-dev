@@ -575,31 +575,31 @@ section {
   background-color: #032144;
   padding: 16px;
 }
-#content-travel {
+#first-project-content {
   border: 1px solid #27debf;
 }
 
-#content-sports {
-  border: 1px solid #333a73;
+#second-project-content {
+  border: 1px solid #f3c623;
 }
 
-#content-education {
+#third-project-content {
   border: 1px solid #c499f3;
 }
 
-#content-events {
+#fourth-project-content {
   border: 1px solid #ff004d;
 }
-#miles-travel {
+#first-project {
   color: #27debf;
 }
-#miles-sports {
-  color: #333a73;
+#second-project {
+  color: #f3c623;
 }
-#miles-education {
+#third-project {
   color: #c499f3;
 }
-#miles-events {
+#fourth-project {
   color: #ff004d;
 }
 
